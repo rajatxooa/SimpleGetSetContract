@@ -2,6 +2,6 @@ Apps:
   SimpleContract:
     Name: GetSetContract
     Description: Solidity Get Set Smart Contract
-    path: /contract
+    path: /contract/
     language: solidity
     README: https://github.com/rajatxooa/simpleContract/blob/master/README.md
