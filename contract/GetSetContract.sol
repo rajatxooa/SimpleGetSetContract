@@ -9,8 +9,9 @@ contract GetSetContract{
         return data;
     }
 
-    function set(string arg) public {
+    function set(string arg) public returns(string) {
         data = arg;
+        return data;
     }
 
     function getHelloText() public view returns(string) {
