@@ -1,7 +1,13 @@
 Apps:
-  SimpleContract:
+  SimpleContractSolidity:
     Name: GetSetContract
-    Description: Solidity Get Set Smart Contract
+    Description: Solidity Get Set Smart Contract for Ethereum
     path: /contract/GetSetContract.sol
     language: solidity
+    README: https://github.com/rajatxooa/simpleContract/blob/master/README.md
+  GetSetGo:
+    Name: GetSetContract
+    Description: Go Get Set Smart Contract for Hyperledger fabric
+    path: /contract_go/GetSetGo.sol
+    language: go
     README: https://github.com/rajatxooa/simpleContract/blob/master/README.md
