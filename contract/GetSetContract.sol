@@ -9,7 +9,6 @@ contract GetSetContract{
         string memory value = state[key];
         
         require(!equal(value, ''));
-        emit StateSaveEvent(key, value);
         
         return value;
     }
@@ -17,6 +16,7 @@ contract GetSetContract{
     function set(string memory key, string memory value) public {
         state[key] = value;
 
+        emit StateSaveEvent(key, value);
     }
     
     function compare(string _a, string _b) internal returns (int) {
