@@ -3,18 +3,20 @@ pragma solidity ^0.4.0;
 contract GetSetContract{
 
     mapping (string => string) state;
-    event StateSaveEvent(string data);
+    event StateSaveEvent(string key, string value);
 
     function get(string memory key) public view returns(string) {
         string memory value = state[key];
         
         require(!equal(value, ''));
+        emit StateSaveEvent(key, value);
         
         return value;
     }
 
-    function set(string memory key, string memory value) public returns(string) {
+    function set(string memory key, string memory value) public {
         state[key] = value;
+
     }
     
     function compare(string _a, string _b) internal returns (int) {
