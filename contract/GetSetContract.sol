@@ -1,5 +1,5 @@
 pragma solidity ^0.4.0;
-
+xx;
 contract GetSetContract{
 
     mapping (string => string) state;
