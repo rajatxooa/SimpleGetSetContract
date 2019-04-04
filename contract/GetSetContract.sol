@@ -5,7 +5,7 @@ contract GetSetContract{
     mapping (string => string) state;
     event StateSaveEvent(string key, string value);
 
-    //function get(string memory key) public view returns(string) {
+    function get(string memory key) public view returns(string) {
         string memory value = state[key];
         
         require(!equal(value, ''));
